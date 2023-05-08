@@ -1,0 +1,109 @@
+request_details   			
+================    
+request_details_id -> request_details_id
+request_id -> request_id
+from_date -> from_date
+to_date -> to_date
+mobile_number -> requested_number & requested_number_type
+ipaddress -> requested_number & requested_number_type
+tower_sms -> requested_number & requested_number_type
+cell_id -> requested_number & requested_number_type
+imei_number -> requested_number & requested_number_type
+request_sl_no
+submit_datetime -> request_datetime
+submit_by
+from_time -> from_date
+to_time -> to_date
+date
+time
+provider -> provider
+circle -> circle
+partial_reply_flag -> provider_reply_flag
+blacklisted -> blacklisted
+mobile_number_hash -> requested_number_hash
+imei_number_hash -> requested_number_hash
+tl_is_notified
+cdr_alias_name -> cdr_alias_name
+
+
+===================================================================
+===================================================================
+						mcli_logger_details
+===================================================================
+===================================================================
+id -> request_details_id
+li_id -> request_id
+li_mobile_number -> requested_number & requested_number_type
+li_imei_number -> requested_number & requested_number_type
+
+--------------------------------------------------------------
+li_logger_number -> extra_data -- logger_details{}
+
+li_logger_officer_phone -> extra_data -- logger_details{}
+
+li_logger_officer_name -> extra_data -- logger_details{}
+
+li_logger_group -> extra_data -- logger_details{}
+
+li_logger_sub_group -> extra_data --  logger_details{}
+
+li_logger_sdr_holder -> extra_data --  logger_details{}
+
+li_logger_sdr_plan_type -> extra_data -- logger_details{}
+
+li_logger_sdr_address -> extra_data  -- logger_details{}
+
+li_logger_sdr_entry_by -> extra_data --  logger_details{}
+
+
+-------------------------------------------------------------
+
+
+li_logger_sdr_provider -> provider
+li_logger_sdr_circle -> circle
+li_imei_phone_ild -> requested_number_type
+li_logger_entry_time -> request_datetime
+li_disconnected ->x
+li_reconnected ->x
+li_disconnected_time ->x
+li_reconnected_time ->x
+partial_reply_flag -> provider_reply_flag
+blacklisted -> blacklisted
+
+enable_disable_designated(revoke) -> requested_number_connect_status
+parallal_connection_designated -> requested_number_connect_status
+reconnection_designated -> requested_number_connect_status
+
+reconnection_user_name -> ???
+interception_is_verified
+interception_verified_comment
+interception_verified_by
+interception_verified_datetime
+sdr_is_verified
+sdr_verified_comment
+sdr_verified_by
+sdr_verified_datetime
+logger_details_is_verified
+logger_details_comment
+logger_details_verified_by
+logger_details_verified_datetime
+
+verified_final_on -> x
+verified_by -> x
+kp_memo_no ->x
+kp_memo_no_date ->x
+kp_memo_submitted_by ->x
+kp_memo_sumitted_datetime ->x
+mcpo_memo_no ->x
+mcpo_memo_no_date ->x
+mcpo_memo_submitted_by ->x
+mcpo_memo_sumitted_datetime ->x
+mcdo_memo_no ->x
+mcdo_memo_no_date ->x
+mcdo_memo_submitted_by ->x
+mcdo_memo_sumitted_datetime ->x
+reconnected_against_details_id ->x
+disconnected_against_details_id ->x
+
+li_mobile_number_hash -> requested_number_hash
+li_imei_number_hash -> requested_number_hash
